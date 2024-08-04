@@ -39,7 +39,7 @@ void loop() {
     } else if(key == '#') {
       if(input_password == password_1 || input_password == password_2 || input_password == password_3) {
         Serial.println("The password is correct, unlocking the door in 20 seconds");
-        digitalWrite(RELAY_PIN, HIGH);  // unlock the door for 20 seconds
+        digitalWrite(RELAY_PIN, HIGH);  // unlock the door for 30 seconds
         delay(20000);
         digitalWrite(RELAY_PIN, LOW); // lock the door
       } else {
